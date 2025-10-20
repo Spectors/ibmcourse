@@ -36,4 +36,11 @@ function displayTasks() {
 addTaskBtn.addEventListener("click", addTask);
 clearCompletedBtn.addEventListener("click", clearCompletedTasks);
 
+function clearAllTasks() {
+    tasks = []; // empties the whole array
+    displayTasks(); // refreshes the UI
+  }
+  const clearAllBtn = document.getElementById("clearAllBtn");
+clearAllBtn.addEventListener("click", clearAllTasks);
+
 
